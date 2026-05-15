@@ -1,4 +1,4 @@
-from scripts.data_acquisition import load_data
-
 if __name__ == "__main__":
-    load_data
+    import runpy
+    import os
+    runpy.run_path(os.path.join(os.path.dirname(__file__), "load_data.py"))
